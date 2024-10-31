@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Exo 2", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+body, html {
+    height: 100%;
+}
+
+.navbar{
+    list-style: none;
+    background-color: #6D3D6E;
+    position: sticky;
+    top:0; 
+    z-index: 1; 
+}
+.navbar li{
+    display: inline-block;
+    position: relative;
+}
+
+.navbar li a{
+    display: block;
+    padding: 20px 25px;
+    color: #f1f1f1;
+    text-decoration: none;
+    text-align: center;
+    font: 20px;
+}
+
+.dropdown{
+    display: none;
+    width: 100%;
+    background-color: #6D3D6E;
+    position: absolute;
+    z-index: 1;
+}
+.navbar li a:hover{
+    background-color: #C8C488;
+    color: #000;
+}
+.navbar li:hover .dropdown{
+    display: block;
+}
+
+.dropdown li{
+    display: block;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(35, 50, 83, 0.5),rgba(35, 50, 83, 0.5)), url("./Arc_V_Lancers_Selection.png");
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px #4e4e4e;
+  }
+  
+  .hero-text button {
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: #f1f1f1;
+    background-color: #6D3D6E;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .hero-text button:hover {
+    background-color: #C8C488;
+    color: #000;
+  }
+
+  #container1{
+    height: 60%;
+    background: #C8C488;
+  } 
+#container1 .content{
+    color: #000;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cards{
+    margin-top:20px;
+    width: 100%;
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+}
+
+.card img{
+    width: 250px;
+    height: 250px;
+    display: block;
+    border-radius: 10px;
+}
+.card-overlay{
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.card:hover .card-overlay{
+    height: 100%;
+}
+  
+.card-text {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.card-text button{
+    margin-top: 3px;
+    border: none;
+    border-radius: 10px;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: #f1f1f1;
+    background-color: #6D3D6E;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  
+.card-text button:hover{
+    background-color: #C8C488;
+    color: #000;
+}
