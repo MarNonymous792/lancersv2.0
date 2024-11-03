@@ -249,15 +249,14 @@ body, html {
 .newsletter{
     height: 60%;
     background-color: #342276;
-    /* position: relative;    */
     align-items: center;
     justify-content: center;
     display: flex;
-    
 }
 .newsletter h1, .newsletter p{
     color:#f1f1f1;
     text-align: center;
+    text-shadow: 2px 2px #4e4e4e;
 }
 
 h1{
@@ -332,6 +331,11 @@ i{
     border-color:#6D3D6E;
 }
 
-.about-dev{
+.footer{
     height: 50%;
+    background-color: #233253;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    
 }
